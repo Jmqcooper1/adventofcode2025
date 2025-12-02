@@ -1,0 +1,105 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv/
+.env/
+env.bak/
+venv.bak/
+.uv/
+.python-version
+
+# Pyre type checker
+.pyre/
+
+# Mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Pytest
+.cache
+.pytest_cache/
+
+# Cython debug symbols
+cython_debug/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+
+# Local test / debug stuff
+*.log
+
+# dotenv
+.env.*
+.env
+
+# VS Code settings
+.history/
+
+# Poetry
+poetry.lock
+
+# Uv files
+.uv
+.uv.lock
+
+# Misc
+*.bak
+*.swp
+
+# Pyproject local
+*.toml~
+
+# Test result files
+*.cover
+coverage.xml
+htmlcov/
+
+# Replaces for common VCSes (can be extended)
+*.orig
+*.rej
+
+# Local cache
+*.cache
+
