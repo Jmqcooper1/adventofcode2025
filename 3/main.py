@@ -54,7 +54,7 @@ def main():
         for line in get_input_lines("3/puzzle_input.txt").split('\n')
         if line.strip()  # only include non-empty lines (got an empty list)
     ]
-    largest_two_digits : list[int] = [find_largest_two_digits(bank) for bank in banks]
+    largest_two_digits : list[int] = [find_largest_x_digits(bank, 2) for bank in banks]
     largest_twelve_digits : list[int] = [find_largest_x_digits(bank, 12) for bank in banks]
     print(f"Part 1 (sum of largest two digits): {sum(largest_two_digits)}")
     print(f"Part 2 (sum of largest twelve digits): {sum(largest_twelve_digits)}")
