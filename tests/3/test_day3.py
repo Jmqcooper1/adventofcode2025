@@ -1,10 +1,9 @@
 import pytest
-from conftest import import_day_module
+from conftest import import_day
 
-# Import main module from day 3
-main = import_day_module(3)
+main = import_day(3)
 find_largest_two_digits = main.find_largest_two_digits
-find_largest_twelve_digits = main.find_largest_twelve_digits
+find_largest_twelve_digits = main.find_largest_x_digits
 
 @pytest.fixture
 def test_banks():
@@ -24,8 +23,8 @@ def test_find_largest_two_digits(test_banks):
     assert results == [98, 89, 78, 92]
     assert sum(results) == 357
 
-def test_find_largest_two_digits(test_banks):
-    """Test find_largest_two_digits function with fixture data."""
+def test_find_largest_twelve_digits(test_banks):
+    """Test find_largest_twelve_digits function with fixture data."""
     banks : list[list[int]] = [
         list[int](map(int, list[str](line)))
         for line in test_banks.split('\n')
