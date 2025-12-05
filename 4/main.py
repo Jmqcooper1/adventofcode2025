@@ -20,7 +20,7 @@ NEIGHBOURS = [
 ]
 
 # To solve this I would think we need to keep track in each row the position and all the neighbours and check if that position has less than 4 adjacent rolls.
-# The nice thing is we skip all "@" and only look at "." positions.
+# The nice thing is we skip all "." and only look at "@" positions.
 # We need to keep track of row and column position to calculate our neighbour squares.
 # Also need to track the border indexes 
 def forklift_access(grid: list[list[str]], amount_of_rolls: int, recursive: bool = False) -> int:
